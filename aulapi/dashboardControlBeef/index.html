@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span>ControlBeef</span>
+                <img src="styles/assets/logoControlBeef1.png" alt="logo ControlBeef">
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <span>|</span>
+                <a href="#sobre-nos">Sobre Nós</a>
+                <span>|</span>
+                <a href="login.html">Login</a>
+                <span>|</span>
+                <a href="registro.html">Cadastro</a>
+            </div>
+        </div>
+    </header>
+    <div class="tabelaPrincipal">
+        <canvas id="tabelaSala"></canvas>
+    </div>
+
+
+    <div class="rodape">
+        <div class="contato">
+            <h2>ControlBeef</h2>
+            <p>Control Beef <br>Rua Haddock Lobo, n.º 595, Consolação, <br> São Paulo/SP - CEP 1414001</p>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Control Beef. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    const GraficoSala = [
+        "12:00",
+        "13:00",
+        "14:00",
+        "15:00",
+        "16:00",
+        "17:00",
+    ];
+    const dadosSala = {
+        labels: GraficoSala,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [4, 3, 2, 1, -1, -1],
+        }]
+    };
+    const config = {
+        type: 'line',
+        data: dadosSala,
+        options: {}
+    };
+    const myChart = new Chart(
+        document.getElementById('tabelaSala'),
+        config
+    );
+
+</script>
