@@ -6,19 +6,21 @@
     font-weight: 400;
     scroll-behavior: smooth;
 }
+
 /*--------------------------------------------------------------------------------------CORPO--------------------------------------------------------------------------------------*/
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     font-size: 25px;
 }
+
 /*--------------------------------------------------------------------------------------NAVBAR--------------------------------------------------------------------------------------*/
 .navbar {
     margin: 0;
     font-size: 35px;
     display: flex;
-    position: fixed; 
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     padding: 21px 32px;
@@ -27,6 +29,7 @@ body {
     width: 100%;
     zoom: 70%;
 }
+
 .logo {
     display: flex;
     gap: 5px;
@@ -41,20 +44,54 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap:30px;
+    gap: 30px;
 }
 
 .menu a {
     text-decoration: none;
-    color:black;
+    color: black;
     font-weight: 500;
 }
-
+.container{
+    padding: 10px;
+}
+.tabelaSensores{
+    display: flex;
+    padding: 10px;
+}
+.item{
+    padding: 10px;
+    width: 550px;
+}
+.containerTotal{
+    background-color: rgb(93,215,237);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lateral{
+    display: flex;
+    flex-direction: column;
+}
 /*--------------------------------------------------------------------------------------CANVAS--------------------------------------------------------------------------------------*/
 
-.tabelaSala canvas{
+.tabelaPrincipal {
+    padding: 15px;
     width: 50%;
-    height: 50%;
+}
+.containerFrigorifico, .containerSalas{
+    margin: 50px;
+    font-size: large ;
+}
+select{
+    font-size: large ;
+    border: 1px solid whitesmoke;
+    border-radius:5px;
+    background-color: #5dd7ed;
+    color: white;
+    outline: none;
+    font-size: large;
 }
 
 /*--------------------------------------------------------------------------------------FOOTER--------------------------------------------------------------------------------------*/
@@ -64,7 +101,7 @@ body {
     display: flex;
     flex-direction: column;
     bottom: 0;
-    gap:10px;
+    gap: 10px;
     width: 100%;
 }
 
@@ -80,6 +117,6 @@ body {
     align-items: center;
 }
 
-.rodape h2{
+.rodape h2 {
     font-weight: 600;
-}   
+}
